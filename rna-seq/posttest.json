@@ -1,0 +1,86 @@
+[
+    {
+    "question":"1. Packages needed to study differential expression analysis of RNA seq:",
+    
+    "answers":
+    {
+    "a":"library(edgeR)",
+    "b":"library(gplots)",
+    "c":"library(NMF)",
+    "d":"All the above"
+    },
+    "correctAnswer":"d"
+    },
+    
+   
+   
+    {
+    "question":
+    "2. Which of the following is used to add some annotation information",
+    
+    "answers":
+    {
+    "a":"org.Mm.eg.db",
+    "b":"Glimma",
+    "c":"Limma",
+    "d":"Gplots"
+    },
+    
+    "correctAnswer":"a"
+    },
+
+
+  
+  
+    {
+        "question":
+        "3. cpm function from the edgeR indicates:",
+        
+        "answers":
+        {
+        "a":"central part in mRNA seq",
+        "b":"counts-per-million",
+        "c":"counts-pointed-mutation",
+        "d":"None of the above"
+        },
+        
+        "correctAnswer":"b"
+        },
+
+
+
+
+   {
+    "question":
+    "4. To create Multidimensional Scaling  plot, we use the function:",
+    
+    "answers":
+    {
+    "a":"CreateMDS",
+    "b":"GenerateMDS",
+    "c":"PlotMDS",
+    "d":"DrawMDS"
+    },
+    
+    "correctAnswer":"c"
+    },   
+
+
+
+    {
+        "question":
+        "5. In Bioinformatics and Data Science, a differential gene expression analysis includes the following:",
+        
+        "answers":
+        {
+        "a":"Processing of sequencing reads (including alignment)",
+        "b":"Estimation of individual gene expression levels",
+        "c":"Identification of differentially expressed (DE) genes",
+        "d":"All the above"
+        },
+        
+        "correctAnswer":"d"
+        }
+
+
+    ]

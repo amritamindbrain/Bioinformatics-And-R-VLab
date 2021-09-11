@@ -1,0 +1,70 @@
+[
+    {
+    "question":"1. Differential expression analysis indicates:",
+    
+    "answers":
+    {
+    "a":"Reading genetic information of original genes",
+    "b":"Measure quantitative changes in expression levels between experimental groups",
+    "c":"Understanding translation approach.",
+    "d":"All the above"
+    },
+    "correctAnswer":"b"
+    },
+    
+   
+   
+    {
+    "question":
+    "2. Applications of RNA-seq:",
+    
+    "answers":
+    {
+    "a":"gene expression profiling between samples",
+    "b":"study of alternative splicing events",
+    "c":"identification of allele-specific expression and single nucleotide polymorphisms (SNPs)",
+    "d":"All the above"
+    },
+    
+    "correctAnswer":"d"
+    },
+
+
+  
+  
+    {
+        "question":
+        "3. Poly(A) tails can be identified:",
+        
+        "answers":
+        {
+        "a":"multiple As or Ts at the end of some reads",
+        "b":"GT–AG dinucleotides that flank splice sites",
+        "c":"multiple Gs or Cs at the end of some reads",
+        "d":"multiple Cs or Ts at the end of some reads"
+        },
+        
+        "correctAnswer":"a"
+        },
+
+
+
+
+   {
+    "question":
+    "4. For Differential expression analysis, one can use:",
+    
+    "answers":
+    {
+    "a":"sampleDistMatrix",
+    "b":"samplePoisDistMatrix",
+    "c":"DESeqDataSet",
+    "d":"None of the above"
+    },
+    
+    "correctAnswer":"c"
+    }   
+
+
+
+    ]

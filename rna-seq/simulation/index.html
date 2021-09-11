@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+    </head>
+    <title>
+        Vlab experiment GC count
+    </title>
+    <body>
+
+        <div class="card-header" style="max-width: 70rem; background: rgb(241, 239, 239);">
+            <div class="row">
+
+                <div class="col-1" style="left: 10px; text-align: center;">
+                    <a href="https://www.amrita.edu/center/mind-brain" target="_blank">
+                        <img alt="amritalogo" src="./images/Amritalogo.png" style="width:300px;height:90px;">
+                    </a>
+                </div>
+
+                <div class="col-2" style="border-right: thick solid #d8d8d8ee; margin-left: 80px;"></div>
+
+                <div class="col-6" style="margin-left: 40px;">
+                    <!--h2><b>Simulator</b></h1-->
+                    </br>
+                    <h5 class="card-subtitle mb-2 text-muted"><b><i>Differential expression analyses of RNA-seq</i></b></h2>
+                </div>
+
+            </div>
+  
+        </div>
+        
+        <div class="card-header" style="max-width: 70rem; background: rgb(253, 253, 253);">
+            <form style="padding: 150px;">
+
+                <div class="form-group">
+                    
+                    <p>Download the sample R code and run in your local system</p>
+                    <br>
+                    <p>Need to install the given below <span><b>Bioconductor</b></span> R packages in your R </p>
+                    
+                    <br>
+
+                    <code>
+                        if (!requireNamespace("BiocManager", quietly = TRUE))<br>
+                        install.packages("BiocManager")<br><br>
+
+                        BiocManager::install("DESeq2")<br>
+                        BiocManager::install("edgeR")<br>
+                        BiocManager::install("biomaRt")<br>
+                        BiocManager::install('PCAtools')<br>
+
+                    </code>
+
+                    <br>
+
+                    <a href="./RNA_Seq_sample_code.R" download="RNA_Seq_sample_code.R" > <button class="btn btn-success" type="button"> Sample Code </button> </a> 
+                    
+                    <br>
+                    <br>
+                    
+                    <output id="GCValueout">
+                        
+                    </output>
+
+                </div>
+
+            </form>
+        </div>
+
+        <script>
+
+            //finding the GC and AT Content of a DNA
+
+            function FindGC() {
+
+                let dna_seq = document.getElementById('dnainput').value.toUpperCase();
+                
+                if(dna_seq.match(/^\s+$/) || dna_seq == ""){
+                    
+                    alert("Please enter a DNA Sequence");
+                    return
+                }
+
+                let a = count(dna_seq, "A")
+                let c = count(dna_seq, "C")
+                let g = count(dna_seq, "G")
+                let t = count(dna_seq, "T")
+
+                let GC_content = ((g + c) / (g + c + a + t) * 100).toFixed(2) + "%";
+                
+                if (dna_seq == "") {
+                    
+                    document.getElementById('dnainput').style.border = "1px solid red";
+                    document.getElementById('GCValueout').innerHTML = "";
+                
+                } else {
+                    document.getElementById('GCValueout').innerHTML = "GC Content: " + GC_content;
+                }
+            }
+
+            function count(str, letter) {
+                var letter_Count = 0;
+                for (var position = 0; position < str.length; position++) {
+                
+                if (str.charAt(position) == letter) {
+                    letter_Count++;
+                }
+                
+                }
+                return letter_Count;
+            }
+
+        </script>
+
+    </body>
+</html>
