@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+    </head>
+    <title>
+        Calculating genetic distances between protein sequences
+    </title>
+    <body>
+        
+        <div class="card-header" style="max-width: 70rem; background: rgb(241, 239, 239);">
+            <div class="row">
+
+                <div class="col-1" style="left: 10px; text-align: center;">
+                    <a href="https://www.amrita.edu/center/mind-brain" target="_blank">
+                        <img alt="amritalogo" src="./images/Amritalogo.png" style="width:300px;height:90px;">
+                    </a>
+                </div>
+
+                <div class="col-2" style="border-right: thick solid #d8d8d8ee; margin-left: 80px;"></div>
+
+                <div class="col-6" style="margin-left: 40px;">
+                    <!--h2><b>Simulator</b></h1-->
+                    </br>
+                    <h5 class="card-subtitle mb-2 text-muted"><b><i>Calculating genetic distances between protein sequences</i></b></h2>
+                </div>
+
+            </div>
+  
+        </div>
+        
+        <div class="card-header" style="max-width: 70rem; background: rgb(253, 253, 253);">
+            <form style="padding: 30px;">
+
+                    <div>
+
+                        <p><h5><b>Example of Multiple sequence Alignment</b></h5></p>
+                        </br>
+                        <p><i><span><b>>1ymg_A  THE CHANNEL ARCHITE</b></span>
+                            SASFWRAICAEFFASLFYVFFGLGASLRW-----AG------P---------lHVLQVAL
+                            AFGLALATLVQAVGHISGAHVNPAVTFAFLVGSQMSLLRAICYMVAQLLGAVAGAAVLYS
+                            VT--PPAvRGNlALNTLHPGVSVGQATIVEIFLTLQFVLCIFATYDERRNGRLGSVALAV
+                            GFSLTLGHLFGMYYTGAGMNPARSFAPAILTR------NFTNHWVYWVGPVIGAGLGSLL
+                            YDFLLFPRLKSVSERLSILKG </br>
+                            <span><b>>2d57_A  DOUBLE LAYERED 2D C</b></span>
+                            TQAFWKAVTAEFLAMLIFVLLSVGSTINW-----GG-SENPLP---------VDMVLISL
+                            CFGLSIATMVQCFGHISGGHINPAVTVAMVCTRKISIAKSVFYITAQCLGAIIGAGILYL
+                            VT--PPSVVGGLGVTTVHGNLTAGHGLLVELIITFQLVFTIFASCDSKRTDVTGSVALAI
+                            GFSVAIGHLFAINYTGASMNPARSFGPAVIMG------NWENHWIYwVGPIIGAVLAGAL
+                            YEYVF--------------CP</br>
+                            <span><b>>2f2b_A  CRYSTAL STRUCTURE O</b></span>
+                            MVSLTKRCIAEFIGTFILVFFGAGSAAVTLMIASGGTSPNPFNIGIGLLGGLGDWVAIGL
+                            AFGFAIAASIYALGNISGCHINPAVTIGLWSVKKFPGREVVPYIIAQLLGAAFGSFIFLQ
+                            CAGIGAATVGGLGATAPFPGISYWQAMLAEVVGTFLLMITIMGIAvDERAP-KGFAGIII
+                            GLTVAGIITTLGNISGSSLNPARTFGPYLNDMifagtDlWNYYSIYvIGPIVGAVLAALT
+                            YQYL---------------TS</i></p>
+            
+                        <code>
+                            library(seqinr) #load seqinr package
+                            </br>
+                            myseqs <- read.alignment("msa.fasta", format = "fasta")
+                            </br>
+                            mat <- dist.alignment(myseqs, matrix = "identity")
+                            </br>
+                            mat
+                            </br>
+                        </code>    
+
+                        </br>
+
+                        <button class="btn btn-success" id="geneload" onclick="LoadData()" type="button" style="width: 100px">Run</button>
+                        
+                        <!--a href="./sequence.fasta" download="Samplefile.fasta" > <button type="button">Sample File </button> </a--> 
+
+                        <br>
+                        <br>
+
+                        <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3" style="max-width: 850px; max-height: 600px;">
+                            <output id="seqout">
+                            
+                            </output>
+                        </div>
+                    </div>
+
+            </form>
+        </div>
+        </div>
+
+        <script>
+
+            //https://www.uniprot.org/uniprot/?query=accession:Q9CD83&format=xml
+
+            var dataout
+
+            function LoadData(){
+
+                document.getElementById("seqout").innerHTML =  "<pre>         1ymg_A       2d57_A </pre>" + "</br>" + 
+                                                               "<pre>2d57_A   0.7214901 </pre>" + "</br>" +
+                                                               "<pre>2f2b_A   0.8369354   0.7855680 </pre>";
+
+/*1ymg_A    2d57_A
+2d57_A 0.7214901          
+2f2b_A 0.8369354 0.7855680*/
+                    
+            }
+
+            
+
+        </script>
+
+    </body>
+</html>

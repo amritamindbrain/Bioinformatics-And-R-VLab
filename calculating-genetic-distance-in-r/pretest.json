@@ -1,0 +1,68 @@
+[
+    {
+    "question":"1. Method for aligning many biological sequence in a simultaneous manner.",
+    
+    "answers":
+    {
+    "a":"Pairwise alignment",
+    "b":"Global alignment",
+    "c":"Multiple sequence alignment",
+    "d":"Local alignment"
+    },
+    "correctAnswer":"c"
+    },
+    
+   
+   
+    {
+    "question":
+    "2. Multiple sequence alignment is applicable in understanding: ",
+    
+    "answers":
+    {
+    "a":"Motifs patterns",
+    "b":"Domain analysis",
+    "c":"Evolutionary relationships",
+    "d":"All the above"
+    },
+    
+    "correctAnswer":"d"
+    },
+
+
+  
+  
+    {
+        "question":
+        "3. Expand PHYLIP ",
+        
+        "answers":
+        {
+        "a":"PHYLogenetic Integration Programme",
+        "b":"PHYLogeny Inferance Package",
+        "c":"PHYlogeny Linear Package",
+        "d":"PHYLogeny Information Package"
+        },
+        
+        "correctAnswer":"b"
+        },
+
+
+
+
+   {
+    "question":
+    "4. Gaps in sequence alignment represents.",
+    
+    "answers":
+    {
+    "a":"Insertion",
+    "b":"Deletion",
+    "c":"Genetic rearrangements",
+    "d":"All the above"
+    },
+    
+    "correctAnswer":"d"
+    }     
+
+    ]

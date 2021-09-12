@@ -1,0 +1,68 @@
+[
+    {
+    "question":"1. Genetic distance estimation of proteins help in:",
+    
+    "answers":
+    {
+    "a":"functional and structural similarities of paired sequences",
+    "b":"to understand conserved sequence homologies and evolutionary relationships",
+    "c":"to understand evolutionary relationships among different protein sequences",
+    "d":"All the above"
+    },
+    "correctAnswer":"d"
+    },
+    
+   
+   
+    {
+    "question":
+    "2. Which of the following method(s) are suitable for calculating genetic distances of proteins ? ",
+    
+    "answers":
+    {
+    "a":"Pairwise Sequence Alignment",
+    "b":"Multiple Sequence Alignment",
+    "c":"Global Sequence Alignment",
+    "d":"Local Sequence Alignment"
+    },
+    
+    "correctAnswer":"b"
+    },
+
+
+  
+  
+    {
+        "question":
+        "3. Phylogenetic analysis aids in ",
+        
+        "answers":
+        {
+        "a":"Prediction of gene and protein function to organismal relationships",
+        "b":"Finding best alignment sequence in given pair",
+        "c":"Understanding the basis of point mutation",
+        "d":"Only finding homologous pairs in given sequence"
+        },
+        
+        "correctAnswer":"a"
+        },
+
+
+
+
+   {
+    "question":
+    "4. Genetic distance have.",
+    
+    "answers":
+    {
+    "a":"Inverse relation with elapsed time",
+    "b":"Linear proportion with elapsed time",
+    "c":"Inverse relation with sequence similarity",
+    "d":"Linear relation with dissimilarities in sequence"
+    },
+    
+    "correctAnswer":"b"
+    }     
+
+    ]

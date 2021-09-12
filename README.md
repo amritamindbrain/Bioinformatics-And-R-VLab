@@ -24,6 +24,20 @@ Installation process is really simple:
 
     5. Reading Fasta using SequinR
 
+    6. Retrieving a list of sequences from UniProt
+
+    7. Calculating genetic distances between protein sequences
+
+    8. DNA sequence analysis and determing DNA open reading frames
+
+    9. UniProt Protein Sequence Retrieval in R
+
+    10. Gene finding: Finding Start and Stop codons using R
+
+    11. Guanine-Cytosine content analysis and basics of DNA sequence statistics
+
+    12. Writing and reading sequence data in R
+
 # About authors
 
 Web simulation has been developed by [Anandhu Presannan](https://github.com/anandhupresannan)

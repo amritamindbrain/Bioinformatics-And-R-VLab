@@ -1,0 +1,71 @@
+[
+{
+"question":"1. Choose the function used to find the length of a sequence?",
+
+"answers":
+{
+"a":"len(sequence_name)",
+"b":"length(sequence_name)",
+"c":" length{sequence_name}",
+"d":"seqlen(sequence_name)"
+},
+"correctAnswer":"b"
+},
+
+{
+"question":
+"2. Choose the function used to close a remote protein database:",
+
+"answers":
+{
+"a":"exit()",
+"b":"closebank()",
+"c":" shutdatabase()",
+"d":" choosebank()"
+},
+
+"correctAnswer":"b"
+},
+{
+"question":
+"3. Function used to list protein database",
+
+"answers":
+{
+"a":"listbank ( )",
+"b":"choosebank ( )",
+"c":"proteinbank ( )",
+"d":"proteinlist ( )"
+},
+
+"correctAnswer":"a"
+},
+{
+"question":
+"4. UniProt has a set of complete proteome information of organisms with  completely sequenced genomes:",
+
+"answers":
+{
+"a":"True",
+"b":"False"
+},
+
+"correctAnswer":"a"
+},
+{
+"question":
+"5. In biological sciences, uniprot is important in",
+
+"answers":
+{
+"a":"Retrieval of up-to-date protein information",
+"b":" Protein Sequence Analysis of multiple protein of interest",
+"c":" Has links to other biological databases for retrieving maximum information about a query sequence ",
+"d":" All the above"
+},
+
+"correctAnswer":"d"
+}
+
+
+]
